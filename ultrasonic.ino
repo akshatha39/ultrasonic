@@ -1,8 +1,22 @@
+
+
+//Created by:akshatha //
+//date      :21/8/2018//
+//Topic     :ultrasonic sensor control//
+
+
+
+
+
+
+
+
+
 // defines pins numbers
-const int trigPin = 9;
-const int echoPin = 10;
-int led11=5;
-int led22=6;
+const int trigPin = 9;//intialize the trigpin//
+const int echoPin = 10;//intialize the echopin//
+int led11=5;           //intialize led11//
+int led22=6;          //intialize led22//
 void led1();
 void led2();
 // defines variables
@@ -38,16 +52,16 @@ else if(10< distance <20){
   Serial.println("s");
 }
 else{
-  digitalWrite(led11,LOW);
+  digitalWrite(led11,LOW);//making led11 low//
   delay;
-  digitalWrite(led22,LOW);
+  digitalWrite(led22,LOW);//making led11 low//
   delay;
   
 }
 }
 void led1()
 {
-  Serial.println("led1 on");
+  Serial.println("led11 on"); //printing as led22on//
   digitalWrite(led11,HIGH);
   delay(200);
    digitalWrite(led11,LOW);
@@ -55,7 +69,7 @@ void led1()
 }
 void led2()
 {
-Serial.println("led2 on");
+Serial.println("led22 on");
   digitalWrite(led22,HIGH);
   delay(200);
    digitalWrite(led22,LOW);
